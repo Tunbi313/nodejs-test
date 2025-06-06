@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "nodejs test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tunbi313/nodejs-test.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "tungbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tunbi313/nodejs-test/issues"
+  },
+  "homepage": "https://github.com/Tunbi313/nodejs-test#readme"
+}
