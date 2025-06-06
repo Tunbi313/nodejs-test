@@ -8,13 +8,16 @@
     "start": "nodemon",
     "dev": "nodemon"
   },
-  "nodemonConfig":{
-  "watch": ["src"],
-  "ext": "ts",
-  "ignore": ["node_modules"],
-  "exec": "ts-node ./src/app.ts"
-},
-
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "node_modules"
+    ],
+    "exec": "ts-node ./src/app.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tunbi313/nodejs-test.git"
@@ -31,6 +34,7 @@
   },
   "homepage": "https://github.com/Tunbi313/nodejs-test#readme",
   "dependencies": {
+    "dotenv": "16.4.7",
     "express": "5.0.1"
   },
   "devDependencies": {
