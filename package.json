@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Tunbi313/nodejs-test/issues"
   },
-  "homepage": "https://github.com/Tunbi313/nodejs-test#readme"
+  "homepage": "https://github.com/Tunbi313/nodejs-test#readme",
+  "dependencies": {
+    "express": "5.0.1"
+  }
 }
