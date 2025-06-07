@@ -1,6 +1,7 @@
 
 import express from "express";
 import 'dotenv/config'
+import webRoutes from "./routes/web"; 
 import { dirname } from "path";
 const app = express()
 const port = process.env.port || 8080;
@@ -9,13 +10,10 @@ const port = process.env.port || 8080;
  app.set('views',__dirname +'/views');
  console.log(__dirname +'/views')
 
-app.get('/', (req, res) => {
-  res.render("home.ejs")
-})
-
-app.get('/abc', (req, res) => {
-  res.send('Hello World! ')
-})
+//config routes
+webRoutes(app);
+//config stic files: images/css/js
+app.use(express.static('public'));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
