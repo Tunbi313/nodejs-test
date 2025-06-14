@@ -13,15 +13,15 @@ const getCreateUserPage = (req: Request, res: Response) => {
 
     return res.render("create-user")
 }
-const postCreateUser = (req: Request, res: Response) => {
+const postCreateUser = async(req: Request, res: Response) => {
     
     const{fullname, email, address} = req.body;
     //handle create user
-    handleCreateUser(fullname, email, address)
+   await handleCreateUser(fullname, email, address)
 
     return res.redirect("/");
 }
 
 
 
-export { getHomePage, getCreateUserPage,postCreateUser };
+export { getHomePage, getCreateUserPage,postCreateUser,handleCreateUser };
