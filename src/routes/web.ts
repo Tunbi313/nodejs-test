@@ -7,7 +7,10 @@ const router = express.Router();
 const webRoutes =(app: Express) =>{
 
     router.get('/',getHomePage)
-    router.get('/create-user',getCreateUserPage);
+    router.get('/admin/create-user',getCreateUserPage);
+
+
+
     router.post('/handlecreate-user',postCreateUser);
     router.post('/handle-delete-user/:id',postDeleteUser);
     router.get('/handle-view-user/:id',getViewUser);
